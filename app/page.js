@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import Image from "next/image";
-const myFont = localFont({ src: "../font/Minecrafter.Reg.ttf" });
+const myFont = localFont({ src: "../font/Minecrafter.Alt.ttf" });
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           />
         </div>
         <div className="">
-          <ul className="flex gap-x-6">
+          <ul className="flex text-lg gap-x-10">
             <li className="hover:-rotate-3 hover:scale-[1.1] transition">
               About Us
             </li>
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="mb-10">
             <h1
               style={myFont.style}
-              className="text-5xl md:text-9xl  text-purple-700/90"
+              className="text-5xl md:text-9xl font-semibold  text-purple-700/90"
             >
               HACK-A-SOL
             </h1>
