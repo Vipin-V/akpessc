@@ -1,4 +1,3 @@
-
 import localFont from "next/font/local";
 import Image from "next/image";
 const myFont = localFont({ src: "../font/Minecrafter.Reg.ttf" });
@@ -6,28 +5,38 @@ const myFont = localFont({ src: "../font/Minecrafter.Reg.ttf" });
 export default function Home() {
   return (
     <>
-      <div className="absolute h-screen">
-        <div
-          className="fixed  w-full h-full bg-fixed bg-cover bg-center"
-          style={{
-            backgroundImage: "url(/bg.png)",
-            opacity: 0.5,
-          }}
-        />
+      <nav className="fixed top-0 left-0 h-20 w-full z-50 flex  px-10 py-1">
+        <div>
+          <Image src="/logo.png" width={70} height={70} className="object-cover" />
+        </div>
+      </nav>
+      <div
+        className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        style={{
+          backgroundImage: "url(/bg.png)",
+          opacity: 0.5,
+        }}
+      >
+        <div className="h-screen w-full  border-2 flex items-center justify-center ">
+          <h1
+            style={myFont.style}
+            className="text-5xl md:text-9xl  text-purple-800/90"
+          >
+            HACK-A-SOL
+          </h1>
+        </div>
       </div>
-      <div className="-z-10 flex my-auto  flex-col items-center">
-        <Image src="/logo.png" width={300} height={300} alt="logo" />
-        <div
-          className="flex items-center mt-8 justify-center font-bold text-9xl text-[#8b06c5] text-center "
-          style={myFont.style}
-        >
-          Hack-A-Sol
-        </div>
-        <p style={myFont.style} className="text-center mt-4 font-medium font-monospace text-slate-400 text-2xl ">coming soon</p>
-        <div className="flex gap-x-28 mt-16">
-          <button className="bg-blue-600 px-6 py-2 rounded">Register with Devfolio</button>
-          <button className="bg-indigo-400 px-6 py-2 rounded">Join our Discord Server</button>
-        </div>
+      <div className="h-screen w-full border-2 bg-fixed"style={{
+          backgroundImage: "url(/bg2.png)",
+          opacity: 0.5,
+        }}>
+
+      </div>
+      <div className="h-screen w-full border-2 bg-fixed" style={{
+          backgroundImage: "url(/bg3.png)",
+          opacity: 0.5,
+        }}>
+
       </div>
     </>
   );
