@@ -1,10 +1,28 @@
+"use client";
 import localFont from "next/font/local";
 import Image from "next/image";
 const myFont = localFont({ src: "../font/Minecrafter.Alt.ttf" });
+import { createContext } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import ParticleAnimation from "./particleAnimation";
 
 export default function Home() {
+   const pixelatedAndNeonText = {
+    initial: {
+      textShadow:
+        "10px 10px 0 rgba(255, 255, 255, 0.3), 20px 20px 0 rgba(255, 255, 255, 0.3), 3px 3px 0 rgba(255, 255, 255, 0.3), 4px 4px 0 rgba(255, 255, 255, 0.3), 5px 5px 0 rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 0, 228, 0.5), 0 0 20px rgba(255, 0, 228, 0.5), 0 0 30px rgba(255, 0, 228, 0.5), 0 0 40px rgba(255, 0, 228, 0.5), 0 0 70px rgba(255, 0, 228, 0.5), 0 0 80px rgba(255, 0, 228, 0.5), 0 0 100px rgba(255, 0, 228, 0.5), 0 0 150px rgba(255, 0, 228, 0.5)",
+      transform: "translateZ(0)",
+    },
+    animate: {
+      textShadow:
+        "1px 1px 0 rgba(255, 255, 255, 0.4), 2px 2px 0 rgba(255, 255, 255, 0.4), 3px 3px 0 rgba(255, 255, 255, 0.4), 4px 4px 0 rgba(255, 255, 255, 0.4), 5px 5px 0 rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 0, 228, 0.6), 0 0 20px rgba(255, 0, 228, 0.6), 0 0 30px rgba(255, 0, 228, 0.6), 0 0 40px rgba(255, 0, 228, 0.6), 0 0 70px rgba(255, 0, 228, 0.6), 0 0 80px rgba(255, 0, 228, 0.6), 0 0 100px rgba(255, 0, 228, 0.6), 0 0 150px rgba(255, 0, 228, 0.6)",
+      transform: "translateZ(5px)",
+    },
+  };
+  
   return (
     <>
+    
       <nav className="fixed top-0 left-0 h-20 w-full z-50 flex items-center justify-between  px-20 py-1">
         <div>
           <Image
@@ -40,13 +58,33 @@ export default function Home() {
       >
         <div className="h-screen w-full flex flex-col items-center justify-center z-10 ">
           <div className="mb-10">
-            <h1
-              style={myFont.style}
-              className="text-5xl md:text-9xl font-semibold  text-purple-700/90"
+            <AnimatePresence>
+            <motion.div
+              className="mb-10"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2 }}
             >
-              HACK-A-SOL
-            </h1>
-            <p className="text-center text-lg mt-4">20th - 21st Nov, 2023 • Naya Raipur, India</p>
+              <motion.h1
+                style={myFont.style}
+                className="text-5xl md:text-9xl font-semibold  text-purple-700/90 neon-text animate__animated"
+                variants={pixelatedAndNeonText}
+                initial="initial"
+                animate="animate"
+              >
+                HACK-A-SOL
+              </motion.h1>
+              <motion.p
+                className="text-center text-lg mt-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                variants={pixelatedAndNeonText}
+              >
+                20th - 21st Nov, 2023 • Naya Raipur, India
+              </motion.p>
+            </motion.div>
+            </AnimatePresence>
           </div>
 
           <div className="flex gap-x-20 mt-10">
