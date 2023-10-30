@@ -4,10 +4,12 @@ import Image from "next/image";
 const myFont = localFont({ src: "../font/Minecrafter.Alt.ttf" });
 import { createContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import ParticleAnimation from "./particleAnimation";
+import Card from "@/components/card";
+import Timeline from "@/components/timeline";
+import ScrollToTopButton from "@/components/top";
 
 export default function Home() {
-   const pixelatedAndNeonText = {
+  const pixelatedAndNeonText = {
     initial: {
       textShadow:
         "10px 10px 0 rgba(255, 255, 255, 0.3), 20px 20px 0 rgba(255, 255, 255, 0.3), 3px 3px 0 rgba(255, 255, 255, 0.3), 4px 4px 0 rgba(255, 255, 255, 0.3), 5px 5px 0 rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 0, 228, 0.5), 0 0 20px rgba(255, 0, 228, 0.5), 0 0 30px rgba(255, 0, 228, 0.5), 0 0 40px rgba(255, 0, 228, 0.5), 0 0 70px rgba(255, 0, 228, 0.5), 0 0 80px rgba(255, 0, 228, 0.5), 0 0 100px rgba(255, 0, 228, 0.5), 0 0 150px rgba(255, 0, 228, 0.5)",
@@ -19,7 +21,7 @@ export default function Home() {
       transform: "translateZ(5px)",
     },
   };
-  
+
   return (
     <>
       <nav className="fixed top-0 left-0 h-20 w-full z-50 flex items-center justify-between  px-20 py-1">
@@ -55,6 +57,9 @@ export default function Home() {
           </ul>
         </div>
       </nav>
+      <div className="fixed bottom-1 right-1 z-50 h-100 w-100">
+        <ScrollToTopButton/>
+      </div>
       <div
         id="home"
         className=" select-none w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
@@ -66,35 +71,35 @@ export default function Home() {
         <div className="h-screen w-full flex flex-col items-center justify-center z-10 ">
           <div className="mb-10">
             <AnimatePresence>
-            <motion.div
-              className="mb-10"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
-            >
-              <motion.h1
-                style={myFont.style}
-                className="text-5xl md:text-9xl font-semibold  text-purple-700/90 neon-text animate__animated"
-                variants={pixelatedAndNeonText}
-                initial="initial"
-                animate="animate"
+              <motion.div
+                className="mb-10"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2 }}
               >
-                HACK-A-SOL
-              </motion.h1>
-              <motion.p
-                className="text-center text-lg mt-4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                variants={pixelatedAndNeonText}
-              >
-                20th - 21st Nov, 2023 • Naya Raipur, India
-              </motion.p>
-            </motion.div>
+                <motion.h1
+                  style={myFont.style}
+                  className="text-5xl md:text-9xl font-semibold  text-purple-700/90 neon-text animate__animated"
+                  variants={pixelatedAndNeonText}
+                  initial="initial"
+                  animate="animate"
+                >
+                  HACK-A-SOL
+                </motion.h1>
+                <motion.p
+                  className="text-center text-lg mt-10"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  variants={pixelatedAndNeonText}
+                >
+                  20th - 21st Nov, 2023 • Naya Raipur, India
+                </motion.p>
+              </motion.div>
             </AnimatePresence>
           </div>
 
-          <div className="hidden md:flex gap-x-20 mt-10">
+          <div className="hidden md:flex gap-x-20 mt-4">
             <button className="bg-indigo-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
               <Image
                 src="/discord.svg"
@@ -151,7 +156,14 @@ export default function Home() {
           backgroundImage: "url(/bg2.png)",
           opacity: 1,
         }}
-      ></div>
+      >
+          <div className="w-full h-screen border-2">
+
+          </div>
+          <div className="w-full h-screen border-2">
+
+          </div>
+      </div>
       <div
         id="prizes"
         className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
@@ -160,34 +172,41 @@ export default function Home() {
           opacity: 1,
         }}
       >
-        <div className="flex items-center gap-x-20">
-          <div className="relative w-64 h-96 bg-gradient-to-tr from-slate-900 to-slate-700 group ">
-            <div
-              className="bg-slate-600 w-64 h-96 absolute top-2 left-2"
-              draggable
-            >
-              <div
-                className="p-5 border w-full h-full bg-red object-contain"
-                style={{
-                  backgroundImage: "url(/pp.png)",
-                  opacity: 1,
-                }}
-              ></div>
-              {/* <div>
-                <Image src='/hero.png' width={100} height={300} alt="hero" />
-
-              </div>
-              <div className="pr-6">
-                <h1 className="text-3xl">1st Prize</h1>
-                <p>$1000</p>
-              </div> */}
-            </div>
-          </div>
-          <div className="relative w-72 h-44 bg-gradient-to-tr from-yellow-400 to-pink-400">
-            <div className="bg-white w-72 h-44 absolute top-[6px] left-[6px]"></div>
-          </div>
-          <div className="relative w-72 h-44 bg-gradient-to-tr from-yellow-400 to-pink-400">
-            <div className="bg-white w-72 h-44 absolute top-[6px] left-[6px] "></div>
+        <div className="select-none">
+          <h1
+            style={myFont.style}
+            className="text-center text-5xl mt-8  text-purple-700/90"
+          >
+            Prizes Worth 1.5 Lakhs{" "}
+          </h1>
+          <p className="text-center mt-3">
+            with a 10,000 Cash Prize for Each Track Winner and Goodies for all.
+          </p>
+          <div
+            className="flex items-center mt-10 gap-x-20"
+            style={{ perspective: 2000 }}
+          >
+            <Card
+              imageUrl="/gm.png"
+              prize="1st Prize"
+              post="₹50,000 Cash Prize and Goodies"
+              randomRotateY={10}
+              randomRotateX={8}
+            />
+            <Card
+              imageUrl="/silver.png"
+              prize="2nd Prize"
+              post="₹35,000 Cash and Goodies"
+              randomRotateY={-12}
+              randomRotateX={-8}
+            />
+            <Card
+              imageUrl="/bz.png"
+              prize="3rd Prize"
+              post="₹25,000 Cash and Goodies"
+              randomRotateY={8}
+              randomRotateX={13}
+            />
           </div>
         </div>
       </div>
