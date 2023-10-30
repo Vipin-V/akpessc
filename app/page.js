@@ -22,35 +22,42 @@ export default function Home() {
   
   return (
     <>
-    
       <nav className="fixed top-0 left-0 h-20 w-full z-50 flex items-center justify-between  px-20 py-1">
         <div>
-          <Image
-            src="/logo.png"
-            width={70}
-            height={70}
-            className="object-cover"
-          />
+          <a href="#home">
+            <Image
+              src="/logo.png"
+              width={60}
+              height={60}
+              className="object-cover"
+            />
+          </a>
         </div>
-        <div className="">
+        <div className="flex md:hidden">
+          <button className="bg-violet-700 gap-x-2 px-4 py-2">
+            Contact Us
+          </button>
+        </div>
+        <div className="hidden md:flex">
           <ul className="flex text-lg gap-x-10">
-            <li className="hover:-rotate-3 hover:scale-[1.1] transition">
-              About Us
+            <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
+              <a href="#about-us">About Us</a>
             </li>
-            <li className="hover:-rotate-3 hover:scale-[1.1] transition">
-              Schedule
+            <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
+              <a href="#schedule">Schedule</a>
             </li>
-            <li className="hover:-rotate-3 hover:scale-[1.1] transition">
-              Prizes
+            <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
+              <a href="#prizes">Prizes</a>
             </li>
-            <li className="hover:-rotate-3 hover:scale-[1.1] transition">
-              Sponsors
+            <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
+              <a href="#sponsors">Sponsors</a>
             </li>
           </ul>
         </div>
       </nav>
       <div
-        className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        id="home"
+        className=" select-none w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
           backgroundImage: "url(/bg4.png)",
           opacity: 0.9,
@@ -87,7 +94,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
 
-          <div className="flex gap-x-20 mt-10">
+          <div className="hidden md:flex gap-x-20 mt-10">
             <button className="bg-indigo-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
               <Image
                 src="/discord.svg"
@@ -107,9 +114,30 @@ export default function Home() {
               <p className="text-lg font-semibold">Apply with Devfolio</p>
             </button>
           </div>
+          <div className="flex md:hidden gap-x-10 mt-6">
+            <button className="bg-indigo-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
+              <Image
+                src="/discord.svg"
+                width={25}
+                height={25}
+                className="object-cover group-hover:-rotate-12 group-hover:scale-125 group-hover:-translate-x-1 transition"
+              />
+              <p className="text-lg font-semibold">Discord</p>
+            </button>
+            <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
+              <Image
+                src="/dev.svg"
+                width={20}
+                height={20}
+                className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
+              />
+              <p className="text-lg font-semibold">Devfolio</p>
+            </button>
+          </div>
         </div>
       </div>
       <div
+        id="about-us"
         className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg3.png)",
@@ -117,6 +145,7 @@ export default function Home() {
         }}
       ></div>
       <div
+        id="schedule"
         className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg2.png)",
@@ -124,13 +153,46 @@ export default function Home() {
         }}
       ></div>
       <div
-        className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        id="prizes"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg.png)",
           opacity: 1,
         }}
-      ></div>
+      >
+        <div className="flex items-center gap-x-20">
+          <div className="relative w-64 h-96 bg-gradient-to-tr from-slate-900 to-slate-700 group ">
+            <div
+              className="bg-slate-600 w-64 h-96 absolute top-2 left-2"
+              draggable
+            >
+              <div
+                className="p-5 border w-full h-full bg-red object-contain"
+                style={{
+                  backgroundImage: "url(/pp.png)",
+                  opacity: 1,
+                }}
+              ></div>
+              {/* <div>
+                <Image src='/hero.png' width={100} height={300} alt="hero" />
+
+              </div>
+              <div className="pr-6">
+                <h1 className="text-3xl">1st Prize</h1>
+                <p>$1000</p>
+              </div> */}
+            </div>
+          </div>
+          <div className="relative w-72 h-44 bg-gradient-to-tr from-yellow-400 to-pink-400">
+            <div className="bg-white w-72 h-44 absolute top-[6px] left-[6px]"></div>
+          </div>
+          <div className="relative w-72 h-44 bg-gradient-to-tr from-yellow-400 to-pink-400">
+            <div className="bg-white w-72 h-44 absolute top-[6px] left-[6px] "></div>
+          </div>
+        </div>
+      </div>
       <div
+        id="sponsors"
         className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg5.png)",
@@ -138,6 +200,7 @@ export default function Home() {
         }}
       ></div>
       <div
+        id="contact-us"
         className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg6.png)",
