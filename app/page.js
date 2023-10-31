@@ -5,7 +5,6 @@ const myFont = localFont({ src: "../font/Minecrafter.Alt.ttf" });
 import { createContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Card from "@/components/card";
-import Timeline from "@/components/timeline";
 import ScrollToTopButton from "@/components/top";
 
 export default function Home() {
@@ -58,7 +57,7 @@ export default function Home() {
         </div>
       </nav>
       <div className="fixed bottom-1 right-1 z-50 h-100 w-100">
-        <ScrollToTopButton/>
+        <ScrollToTopButton />
       </div>
       <div
         id="home"
@@ -149,6 +148,7 @@ export default function Home() {
           opacity: 1,
         }}
       ></div>
+
       <div
         id="schedule"
         className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
@@ -157,13 +157,8 @@ export default function Home() {
           opacity: 1,
         }}
       >
-          <div className="w-full h-screen border-2">
-
-          </div>
-          <div className="w-full h-screen border-2">
-
-          </div>
       </div>
+
       <div
         id="prizes"
         className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"

@@ -15,7 +15,8 @@
     "lucide-react": "^0.290.0",
     "next": "14.0.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",
