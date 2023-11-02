@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 h-20 w-full z-50 flex items-center justify-between  px-20 py-1">
+      <nav className="fixed top-0 left-0 h-20 w-full z-50 flex items-center justify-between px-8 md:px-20 py-1">
         <div>
           <a href="#home">
             <Image
@@ -162,7 +162,7 @@ export default function Home() {
           opacity: 1,
         }}
       >
-        <div className="select-none">
+        <div className="select-none px-8 md:px-20">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-6 mb-4 text-purple-700/90"
@@ -182,7 +182,7 @@ export default function Home() {
           opacity: 1,
         }}
       >
-        <div className="select-none">
+        <div className="select-none px-8 md:px-20">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
@@ -195,13 +195,13 @@ export default function Home() {
 
       <div
         id="prizes"
-        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
           backgroundImage: "url(/bg.png)",
           opacity: 1,
         }}
       >
-        <div className="select-none">
+        <div className="select-none my-10">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-8  text-purple-700/90"
@@ -212,7 +212,7 @@ export default function Home() {
             with a 10,000 Cash Prize for Each Track Winner and Goodies for all.
           </p>
           <div
-            className="flex items-center mt-10 gap-x-20"
+            className="flex flex-col md:flex-row items-center mt-10 gap-x-20"
             style={{ perspective: 2000 }}
           >
             <Card
@@ -241,7 +241,7 @@ export default function Home() {
       </div>
       <div
         id="sponsors"
-        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
           backgroundImage: "url(/bg5.png)",
           opacity: 1,
@@ -265,7 +265,7 @@ export default function Home() {
           opacity: 1,
         }}
       >
-        <div className="select-none">
+        <div className="select-none px-8 md:px-20">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-10 mb-4 text-purple-700/90"

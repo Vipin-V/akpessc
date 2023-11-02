@@ -21,7 +21,7 @@ const AboutUs = () => {
 
   return (
     <div className="  py-12">
-      <div className="container mx-auto p-4 md:p-8">
+      <div className="mx-auto p-4 md:p-8">
         <motion.div
           variants={container}
           initial="hidden"
@@ -43,33 +43,33 @@ const AboutUs = () => {
           <motion.div variants={item} className="md:w-1/2 md:ml-6">
             <div className="flex items-center mb-4">
               <Image
-                src="/logo.png" // Replace with the actual hackathon logo URL
+                src="/logo.png" 
                 alt="Hackathon Logo"
-                className="w-12 h-12 mr-4 rounded-full cursor-pointer"
+                className="w-14 h-14 mr-4 rounded-full cursor-pointer"
                 width={80}
                 height={80}
               />
-              <h2 className="text-4xl font-bold text-purple-700 cursor-pointer">
+              <h2 className="text-xl md:text-4xl font-bold text-purple-700 cursor-pointer">
                 About the Hackathon
               </h2>
             </div>
-            <p className="text-center mb-6 font-semibold">
+            <p className="text-left mb-6 font-semibold">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               iaculis lobortis quam, nec elementum ipsum convallis ac.
             </p>
             <div className="flex items-center mb-4">
               <Image
-                src="/college_logo.png" // Replace with the actual IIIT NR logo URL
+                src="/college_logo.png" 
                 alt="IIIT NR Logo"
-                className="w-16 h-16 mr-4 rounded-full cursor-pointer"
-                width={80}
-                height={80}
+                className="w-14 h-14 mr-4 rounded-full cursor-pointer"
+                width={60}
+                height={60}
               />
-              <h2 className="text-4xl font-bold text-purple-700 cursor-pointer">
-                IIIT Naya Raipur
+              <h2 className="text-xl md:text-4xl font-bold text-purple-700 cursor-pointer">
+                About IIIT Naya Raipur
               </h2>
             </div>
-            <p className="text-center mb-6 font-semibold">
+            <p className=" mb-6 font-semibold">
               IIIT NR is dedicated to promoting technology and innovation. We
               take pride in organizing events like this hackathon to foster
               creativity and learning.
