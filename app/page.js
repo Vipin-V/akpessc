@@ -2,12 +2,22 @@
 import localFont from "next/font/local";
 import Image from "next/image";
 const myFont = localFont({ src: "../font/Minecrafter.Alt.ttf" });
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Card from "@/components/card";
 import ScrollToTopButton from "@/components/top";
+import BlockBreakAnimation from "@/components/BlockAnimation";
+import Timeline from "@/components/timeline";
+import AboutUs from "@/components/about";
+import Sponsors from "@/components/sponsors";
+import ContactUs from "@/components/contact";
 
 export default function Home() {
+  // const [animationComplete, setAnimationComplete] = useState(false);
+
+  // const handleAnimationComplete = () => {
+  //   setAnimationComplete(true);
+  // };
   const pixelatedAndNeonText = {
     initial: {
       textShadow:
@@ -69,6 +79,10 @@ export default function Home() {
       >
         <div className="h-screen w-full flex flex-col items-center justify-center z-10 ">
           <div className="mb-10">
+            {/* {!animationComplete && (
+        <BlockBreakAnimation onAnimationComplete={handleAnimationComplete} />
+      )} */}
+
             <AnimatePresence>
               <motion.div
                 className="mb-10"
@@ -142,21 +156,41 @@ export default function Home() {
       </div>
       <div
         id="about-us"
-        className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg3.png)",
           opacity: 1,
         }}
-      ></div>
+      >
+        <div className="select-none">
+          <h1
+            style={myFont.style}
+            className="text-center text-5xl mt-6 mb-4 text-purple-700/90"
+          >
+            About Us
+          </h1>
+          <AboutUs/>
+        </div>
+
+      </div>
 
       <div
         id="schedule"
-        className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg2.png)",
           opacity: 1,
         }}
       >
+        <div className="select-none">
+          <h1
+            style={myFont.style}
+            className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
+          >
+            Timeline
+          </h1>
+          <Timeline />
+        </div>
       </div>
 
       <div
@@ -207,20 +241,40 @@ export default function Home() {
       </div>
       <div
         id="sponsors"
-        className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg5.png)",
           opacity: 1,
         }}
-      ></div>
+      >
+        <div className="select-none">
+          <h1
+            style={myFont.style}
+            className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
+          >
+            Our Sponsors
+          </h1>
+          <Sponsors/>
+        </div>
+      </div>
       <div
         id="contact-us"
-        className="w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: "url(/bg6.png)",
           opacity: 1,
         }}
-      ></div>
+      >
+        <div className="select-none">
+          <h1
+            style={myFont.style}
+            className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
+          >
+            Contact Us
+          </h1>
+         <ContactUs/>
+        </div>
+      </div>
     </>
   );
 }

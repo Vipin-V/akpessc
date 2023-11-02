@@ -49,3 +49,16 @@
                 0 0 150px rgba(255, 0, 228, 0.5);
   }
 } */
+.floating-photo-container {
+  animation: float 3s infinite cubic-bezier(0.36, 0.45, 0.63, 0.53);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -8px);
+  }
+}
