@@ -19,7 +19,7 @@ const problemStatements = [
   {
     title: "AI&ML",
     description: "Develop machine learning models for real-world problems.",
-    imageUrl: "/ai.jpeg",
+    imageUrl: "/AI.jpeg",
     randomRotateX: 8,
     randomRotateY: 13,
   },

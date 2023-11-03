@@ -65,6 +65,9 @@ export default function Home() {
             <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
               <a href="#sponsors">Tracks & Sponsors</a>
             </li>
+            <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
+              <a href="#contact-us">Contact Us</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -92,7 +95,7 @@ export default function Home() {
                 <motion.h1
                   style={myFont.style}
                   className="text-6xl md:text-9xl font-semibold  text-purple-700/90  "
-                  // variants={pixelatedAndNeonText}
+                  variants={pixelatedAndNeonText}
                   initial="initial"
                   animate="animate"
                 >
