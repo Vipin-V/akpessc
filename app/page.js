@@ -11,6 +11,7 @@ import Timeline from "@/components/timeline";
 import AboutUs from "@/components/about";
 import Sponsors from "@/components/sponsors";
 import ContactUs from "@/components/contact";
+import Tracks from "@/components/Tracks";
 
 export default function Home() {
   // const [animationComplete, setAnimationComplete] = useState(false);
@@ -41,6 +42,7 @@ export default function Home() {
               width={60}
               height={60}
               className="object-cover"
+              alt="logo"
             />
           </a>
         </div>
@@ -61,7 +63,7 @@ export default function Home() {
               <a href="#prizes">Prizes</a>
             </li>
             <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
-              <a href="#sponsors">Sponsors</a>
+              <a href="#sponsors">Tracks & Sponsors</a>
             </li>
           </ul>
         </div>
@@ -92,8 +94,8 @@ export default function Home() {
               >
                 <motion.h1
                   style={myFont.style}
-                  className="text-5xl md:text-9xl font-semibold  text-purple-700/90 neon-text animate__animated"
-                  variants={pixelatedAndNeonText}
+                  className="text-6xl md:text-9xl font-semibold  text-purple-700/90  "
+                  // variants={pixelatedAndNeonText}
                   initial="initial"
                   animate="animate"
                 >
@@ -119,6 +121,7 @@ export default function Home() {
                 width={25}
                 height={25}
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125 group-hover:-translate-x-1 transition"
+                alt="discord"
               />
               <p className="text-lg font-semibold">Join Our Discord</p>
             </button>
@@ -128,6 +131,7 @@ export default function Home() {
                 width={20}
                 height={20}
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
+                alt="devfolio"
               />
               <p className="text-lg font-semibold">Apply with Devfolio</p>
             </button>
@@ -139,6 +143,7 @@ export default function Home() {
                 width={25}
                 height={25}
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125 group-hover:-translate-x-1 transition"
+                alt="discord"
               />
               <p className="text-lg font-semibold">Discord</p>
             </button>
@@ -148,6 +153,7 @@ export default function Home() {
                 width={20}
                 height={20}
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
+                alt="devfolio"
               />
               <p className="text-lg font-semibold">Devfolio</p>
             </button>
@@ -158,7 +164,7 @@ export default function Home() {
         id="about-us"
         className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
-          backgroundImage: "url(/bg3.png)",
+          backgroundImage: "url(/bg4.png)",
           opacity: 1,
         }}
       >
@@ -178,7 +184,7 @@ export default function Home() {
         id="schedule"
         className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
-          backgroundImage: "url(/bg2.png)",
+          backgroundImage: "url(/bg4.png)",
           opacity: 1,
         }}
       >
@@ -197,7 +203,7 @@ export default function Home() {
         id="prizes"
         className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
-          backgroundImage: "url(/bg.png)",
+          backgroundImage: "url(/bg4.png)",
           opacity: 1,
         }}
       >
@@ -243,7 +249,7 @@ export default function Home() {
         id="sponsors"
         className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
-          backgroundImage: "url(/bg5.png)",
+          backgroundImage: "url(/bg4.png)",
           opacity: 1,
         }}
       >
@@ -252,8 +258,12 @@ export default function Home() {
             style={myFont.style}
             className="text-center text-5xl mt-6 mb-4 text-purple-700/90"
           >
-            Our Sponsors
+            Tracks and Sponsors
           </h1>
+          <div className="mb-10 mt-6 px-3">
+          <Tracks/>
+          </div>
+         
           <Sponsors/>
         </div>
       </div>
@@ -261,7 +271,7 @@ export default function Home() {
         id="contact-us"
         className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
         style={{
-          backgroundImage: "url(/bg6.png)",
+          backgroundImage: "url(/bg4.png)",
           opacity: 1,
         }}
       >
@@ -270,7 +280,7 @@ export default function Home() {
             style={myFont.style}
             className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
           >
-            Problem Statements
+            Contact Us
           </h1>
          <ContactUs/>
         </div>

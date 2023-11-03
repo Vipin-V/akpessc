@@ -51,13 +51,13 @@ const ProblemCard = ({ title, description, imageUrl, randomRotateX, randomRotate
             }}
             src={imageUrl}
             alt="image"
-            className="object-cover w-full h-1/2 border-4 border-red-500" // Change border color
+            className="object-cover w-full h-1/2 border-4 border-black" // Change border color
           />
-          <h1 className="text-3xl text-center font-bold text-blue-600 mt-2"> {/* Change text color and font weight */}
+          <h1 className="text-3xl text-center font-bold text-violet-900 mt-2"> {/* Change text color and font weight */}
             {title}
           </h1>
           <div className="flex items-center mt-2 text-center gap-x-4 mx-auto">
-            <p className="font-semibold text-gray-700 text-lg">{description}</p> {/* Change text color and font weight */}
+            <p className="font-semibold text-gray-700 text-sm">{description}</p> {/* Change text color and font weight */}
           </div>
         </div>
       </motion.div>

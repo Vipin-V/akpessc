@@ -17,13 +17,12 @@ const Sponsors = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-center text-lg text-gray-200 mb-8"
+          className="text-center text-3xl font-bold text-slate-300 mb-2 mt-10 px-8 md:px-20"
         >
-          We are grateful to our sponsors for their generous support. Their
-          contributions make this hackathon possible.
+          In Collaboration With 
         </motion.p>
     <Marquee direction="left" speed={60} gradientWidth={200} autoFill={false}
-    className=" mt-6 p-4 rounded-md shadow-md">
+    className=" mt-2 p-4 rounded-md shadow-md mb-3">
 
       {sponsors.map((sponsor, index) => (
         <div key={index} className="mr-16 w-90 h-90 flex items-center justify-center hover:shadow-xl hover:scale-105 transform transition-transform">
