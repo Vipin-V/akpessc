@@ -51,7 +51,7 @@ const Card = ({ imageUrl, prize, post, randomRotateX, randomRotateY  }) => {
             }}
             src={imageUrl} // Use the imageUrl prop here
             alt="image"
-            className="object-cover w-full h-1/2 border-4 border-black"
+            className="object-cover w-full h-1/2 border-4 border-black shadow-lg shadow-slate-800"
           />
           <h1 className="text-3xl text-center font-extrabold text-black mt-2">
             {prize} {/* Use the prize prop here */}

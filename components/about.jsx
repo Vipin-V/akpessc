@@ -53,7 +53,7 @@ const AboutUs = () => {
                 About the Hackathon
               </h2>
             </div>
-            <p className="text-left mb-6 font-semibold">
+            <p className=" text-white text-left mb-6 font-medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               iaculis lobortis quam, nec elementum ipsum convallis ac.
             </p>
@@ -61,7 +61,7 @@ const AboutUs = () => {
               <Image
                 src="/college_logo.png" 
                 alt="IIIT NR Logo"
-                className="w-14 h-14 mr-4 rounded-full cursor-pointer"
+                className="w-12 h-12 mr-4 rounded-full cursor-pointer"
                 width={60}
                 height={60}
               />
@@ -69,7 +69,7 @@ const AboutUs = () => {
                 About IIIT Naya Raipur
               </h2>
             </div>
-            <p className=" mb-6 font-semibold">
+            <p className=" mb-6 font-medium text-white">
               IIIT NR is dedicated to promoting technology and innovation. We
               take pride in organizing events like this hackathon to foster
               creativity and learning.

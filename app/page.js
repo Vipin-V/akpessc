@@ -76,14 +76,11 @@ export default function Home() {
         className=" select-none w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
           backgroundImage: "url(/bg4.png)",
-          opacity: 0.9,
+          opacity: 1,
         }}
       >
         <div className="h-screen w-full flex flex-col items-center justify-center z-10 ">
           <div className="mb-10">
-            {/* {!animationComplete && (
-        <BlockBreakAnimation onAnimationComplete={handleAnimationComplete} />
-      )} */}
 
             <AnimatePresence>
               <motion.div
@@ -102,7 +99,7 @@ export default function Home() {
                   HACK-A-SOL
                 </motion.h1>
                 <motion.p
-                  className="text-center text-lg mt-10"
+                  className="text-center text-white text-lg mt-10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.5 }}
@@ -123,7 +120,7 @@ export default function Home() {
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125 group-hover:-translate-x-1 transition"
                 alt="discord"
               />
-              <p className="text-lg font-semibold">Join Our Discord</p>
+              <p className="text-lg text-white font-medium">Join Our Discord</p>
             </button>
             <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
               <Image
@@ -133,7 +130,7 @@ export default function Home() {
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
                 alt="devfolio"
               />
-              <p className="text-lg font-semibold">Apply with Devfolio</p>
+              <p className="text-lg text-white font-medium">Apply with Devfolio</p>
             </button>
           </div>
           <div className="flex md:hidden gap-x-10 mt-6">
@@ -145,7 +142,7 @@ export default function Home() {
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125 group-hover:-translate-x-1 transition"
                 alt="discord"
               />
-              <p className="text-lg font-semibold">Discord</p>
+              <p className="text-lg text-white font-medium">Discord</p>
             </button>
             <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
               <Image
@@ -155,7 +152,7 @@ export default function Home() {
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
                 alt="devfolio"
               />
-              <p className="text-lg font-semibold">Devfolio</p>
+              <p className="text-lg text-white font-medium">Devfolio</p>
             </button>
           </div>
         </div>
@@ -214,7 +211,7 @@ export default function Home() {
           >
             Prizes Worth 1.5 Lakhs{" "}
           </h1>
-          <p className="text-center mt-3">
+          <p className="text-white text-center mt-3">
             with a 10,000 Cash Prize for Each Track Winner and Goodies for all.
           </p>
           <div
@@ -260,11 +257,11 @@ export default function Home() {
           >
             Tracks and Sponsors
           </h1>
-          <div className="mb-10 mt-6 px-3">
+          <div className="my-10 mt-10 px-3">
           <Tracks/>
           </div>
          
-          <Sponsors/>
+          {/* <Sponsors/> */}
         </div>
       </div>
       <div
