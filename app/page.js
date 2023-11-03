@@ -65,6 +65,9 @@ export default function Home() {
             <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
               <a href="#sponsors">Tracks & Sponsors</a>
             </li>
+            <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
+              <a href="#contact-us">Contact Us</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -76,7 +79,7 @@ export default function Home() {
         className=" select-none w-full min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
           backgroundImage: "url(/bg4.png)",
-          opacity: 0.9,
+          opacity: 1,
         }}
       >
         <div className="h-screen w-full flex flex-col items-center justify-center z-10 ">
@@ -95,7 +98,7 @@ export default function Home() {
                 <motion.h1
                   style={myFont.style}
                   className="text-6xl md:text-9xl font-semibold  text-purple-700/90  "
-                  // variants={pixelatedAndNeonText}
+                  variants={pixelatedAndNeonText}
                   initial="initial"
                   animate="animate"
                 >

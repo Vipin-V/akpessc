@@ -22,7 +22,7 @@ const Sponsors = () => {
           In Collaboration With 
         </motion.p>
     <Marquee direction="left" speed={60} gradientWidth={200} autoFill={false}
-    className=" mt-2 p-4 rounded-md shadow-md mb-3">
+    className=" mt-2 p-4 rounded-md  mb-3">
 
       {sponsors.map((sponsor, index) => (
         <div key={index} className="mr-16 w-90 h-90 flex items-center justify-center hover:shadow-xl hover:scale-105 transform transition-transform">
