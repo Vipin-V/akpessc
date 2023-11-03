@@ -250,7 +250,7 @@ export default function Home() {
         <div className="select-none">
           <h1
             style={myFont.style}
-            className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
+            className="text-center text-5xl mt-6 mb-4 text-purple-700/90"
           >
             Our Sponsors
           </h1>
@@ -270,7 +270,7 @@ export default function Home() {
             style={myFont.style}
             className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
           >
-            Contact Us
+            Problem Statements
           </h1>
          <ContactUs/>
         </div>
