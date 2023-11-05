@@ -29,7 +29,7 @@ const Timeline = () => {
         <div class="flex flex-row-reverse md:contents">
           <div class="bg-indigo-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
             <h3 class="font-semibold text-lg mb-1">
-              1 Nov 2023 to 15 Nov 2023: Registration Period
+              Opening Soon : Registration Period
             </h3>
             <p class="leading-tight text-justify">
               Participants are required to register through Devfolio or UnStop
