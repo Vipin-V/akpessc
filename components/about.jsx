@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,17 +56,16 @@ const AboutUs = () => {
               </h2>
             </div>
             <p className="mb-6 font-medium text-white">
-              Dr. SPM IIIT Naya Raipur (IIITNR) is a renowned institution in
-              Chhattisgarh known for its unwavering dedication to academic
-              excellence and a remarkable 100% placement record. It is a result
-              of a successful collaboration between the Chhattisgarh State
-              Government and NTPC, receiving accolades like the ARIIA Ranking
-              2021 and a four-star ratin from the Institution Innovation Council
-              (IIC), highlighting its focus on innovation and entrepreneurship.
+              Dr. SPM IIIT Naya Raipur is a renowned institution in Chhattisgarh
+              known for its unwavering dedication to academic excellence and a
+              remarkable 100% placement record. It is a result of a successful
+              collaboration between the Chhattisgarh State Government and NTPC,
+              receiving accolades like the ARIIA Ranking 2021 and a four-star
+              ratin from the Institution Innovation Council highlighting its
+              focus on innovation and entrepreneurship.
             </p>
           </motion.div>
         </motion.div>
-
 
         <motion.div
           variants={container}
