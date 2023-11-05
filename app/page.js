@@ -47,7 +47,7 @@ export default function Home() {
           </a>
         </div>
         <div className="flex md:hidden">
-          <button className="bg-violet-700 gap-x-2 px-4 py-2">
+          <button className="bg-violet-700 text-white gap-x-2 px-4 py-2">
             Contact Us
           </button>
         </div>
@@ -94,7 +94,9 @@ export default function Home() {
               >
                 <motion.h1
                   style={myFont.style}
-                  className="text-6xl md:text-9xl font-semibold  text-purple-700/90  "
+                  className="text-6xl md:text-9xl font-semibold text-ce\
+                  \
+                    text-purple-700/90  "
                   variants={pixelatedAndNeonText}
                   initial="initial"
                   animate="animate"
@@ -108,7 +110,7 @@ export default function Home() {
                   transition={{ duration: 1, delay: 0.5 }}
                   variants={pixelatedAndNeonText}
                 >
-                  20th - 21st Nov, 2023 • Naya Raipur, India
+                  25th - 26th Nov, 2023 • Naya Raipur, India
                 </motion.p>
               </motion.div>
             </AnimatePresence>
@@ -127,13 +129,13 @@ export default function Home() {
             </button>
             <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
               <Image
-                src="/dev.svg"
-                width={20}
-                height={20}
+                src="/un.svg"
+                width={25}
+                height={25}
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
                 alt="devfolio"
               />
-              <p className="text-lg text-white font-medium">Apply with Devfolio</p>
+              <p className="text-lg text-white font-medium">Apply with Unstop</p>
             </button>
           </div>
           <div className="flex md:hidden gap-x-10 mt-6">
@@ -149,14 +151,17 @@ export default function Home() {
             </button>
             <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
               <Image
-                src="/dev.svg"
-                width={20}
-                height={20}
+                src="/un.svg"
+                width={25}
+                height={25}
                 className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
                 alt="devfolio"
               />
-              <p className="text-lg text-white font-medium">Devfolio</p>
+              <p className="text-lg text-white font-medium">Unstop</p>
             </button>
+          </div>
+          <div className="pt-20 text-xl md:text-3xl text-center font-bold text-slate-200">
+            Registration Starts Soon
           </div>
         </div>
       </div>
@@ -214,9 +219,6 @@ export default function Home() {
           >
             Prizes Worth 1.5 Lakhs{" "}
           </h1>
-          <p className="text-white text-center mt-3">
-            with a 10,000 Cash Prize for Each Track Winner and Goodies for all.
-          </p>
           <div
             className="flex flex-col md:flex-row items-center mt-10 gap-x-20"
             style={{ perspective: 2000 }}
@@ -239,6 +241,13 @@ export default function Home() {
               imageUrl="/bz.png"
               prize="3rd Prize"
               post="₹25,000 Cash and Goodies"
+              randomRotateY={8}
+              randomRotateX={13}
+            />
+            <Card
+              imageUrl="/tro.jpg"
+              prize="Track Prize"
+              post="₹10,000 Cash and Goodies"
               randomRotateY={8}
               randomRotateX={13}
             />
