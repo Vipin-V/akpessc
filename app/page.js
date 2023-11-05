@@ -173,7 +173,7 @@ export default function Home() {
           opacity: 1,
         }}
       >
-        <div className="select-none px-8 md:px-20">
+        <div className="select-none py-20 px-8 md:px-20">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-6 mb-4 text-purple-700/90"
@@ -193,7 +193,7 @@ export default function Home() {
           opacity: 1,
         }}
       >
-        <div className="select-none px-8 md:px-20">
+        <div className="select-none py-20 px-8 md:px-20">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-10 mb-4 text-purple-700/90"
@@ -206,13 +206,13 @@ export default function Home() {
 
       <div
         id="prizes"
-        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
+        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed py-20 px-8 md:px-20"
         style={{
           backgroundImage: "url(/bg4.png)",
           opacity: 1,
         }}
       >
-        <div className="select-none my-10">
+        <div className="select-none">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-8  text-purple-700/90"
@@ -256,7 +256,7 @@ export default function Home() {
       </div>
       <div
         id="sponsors"
-        className="w-full flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
+        className="w-full py-28 flex items-center justify-center min-h-screen bg-no-repeat bg-center bg-cover bg-fixed px-8 md:px-20"
         style={{
           backgroundImage: "url(/bg4.png)",
           opacity: 1,
@@ -284,7 +284,7 @@ export default function Home() {
           opacity: 1,
         }}
       >
-        <div className="select-none px-8 md:px-20">
+        <div className="select-none py-20 px-8 md:px-20">
           <h1
             style={myFont.style}
             className="text-center text-5xl mt-10 mb-4 text-purple-700/90"

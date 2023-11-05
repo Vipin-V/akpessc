@@ -90,7 +90,7 @@ const Timeline = () => {
               18 Nov 2023 to 23 Nov 2023: Waiting period
             </h3>
             <p class="leading-tight text-justify">
-              Teams are given time to prepare for their travel and startergies
+              Teams are given time to prepare for their travel and startergies.
             </p>
           </div>
         </div>
