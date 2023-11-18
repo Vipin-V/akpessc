@@ -53,7 +53,7 @@ const Timeline = () => {
           </div>
           <div class="bg-indigo-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 class="font-semibold text-lg mb-1">
-              15 Nov 2023 to 17 Nov 2023: Shortlisting of teams
+              Opening Soon : Shortlistling Period
             </h3>
             <p class="leading-tight text-justify">
               20 teams will be shortlisted, who will participate in the offline
@@ -65,7 +65,7 @@ const Timeline = () => {
         <div class="flex flex-row-reverse md:contents">
           <div class="bg-indigo-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
             <h3 class="font-semibold text-lg mb-1">
-              18 Nov 2023: Shortlisted Teams Announcement
+              Opening Soon : Shortlisted Teams Announcement
             </h3>
             <p class="leading-tight text-justify">
               Shortlisted teams will have 28 hours to complete their solutions.
@@ -87,7 +87,7 @@ const Timeline = () => {
           </div>
           <div class="bg-indigo-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 class="font-semibold text-lg mb-1">
-              18 Nov 2023 to 23 Nov 2023: Waiting period
+              Opening Soon : Waiting period
             </h3>
             <p class="leading-tight text-justify">
               Teams are given time to prepare for their travel and startergies.
@@ -97,10 +97,11 @@ const Timeline = () => {
         <div class="flex flex-row-reverse md:contents">
           <div class="bg-indigo-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
             <h3 class="font-semibold text-lg mb-1">
-              24 Nov 00:00 AM: Problem Statement Announcement
+              Opening Soon : Problem Statement Announcement
             </h3>
             <p class="leading-tight text-justify">
-              All the teams will be given the problem statement at 00:00 AM. and required to submit their solutions by 28 hours.
+              All the teams will be given the problem statement at 00:00 AM. and
+              required to submit their solutions by 28 hours.
             </p>
           </div>
           <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">

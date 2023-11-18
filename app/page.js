@@ -110,7 +110,7 @@ export default function Home() {
                   transition={{ duration: 1, delay: 0.5 }}
                   variants={pixelatedAndNeonText}
                 >
-                  25th - 26th Nov, 2023 • Naya Raipur, India
+                  Coming Soon • Naya Raipur, India
                 </motion.p>
               </motion.div>
             </AnimatePresence>
