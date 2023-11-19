@@ -52,7 +52,7 @@ export default function Home() {
           </button>
         </div>
         <div className="hidden md:flex">
-          <ul className="flex text-lg gap-x-10">
+          <ul className="flex text-lg gap-x-10 text-white">
             <li className="cursor-pointer  hover:text-violet-600 hover:-rotate-3 hover:scale-[1.1] transition">
               <a href="#about-us">About Us</a>
             </li>
