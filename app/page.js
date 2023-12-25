@@ -226,28 +226,28 @@ export default function Home() {
             <Card
               imageUrl="/gm.png"
               prize="1st Prize"
-              post="₹50,000 Cash Prize and Goodies"
+              post="₹XXXXX Cash Prize and Goodies"
               randomRotateY={10}
               randomRotateX={8}
             />
             <Card
               imageUrl="/silver.png"
               prize="2nd Prize"
-              post="₹35,000 Cash and Goodies"
+              post="₹XXXXX Cash and Goodies"
               randomRotateY={-12}
               randomRotateX={-8}
             />
             <Card
               imageUrl="/bz.png"
               prize="3rd Prize"
-              post="₹25,000 Cash and Goodies"
+              post="₹XXXXX Cash and Goodies"
               randomRotateY={8}
               randomRotateX={13}
             />
             <Card
               imageUrl="/tro.jpg"
               prize="Track Prize"
-              post="₹10,000 Cash and Goodies"
+              post="₹XXXXX Cash and Goodies"
               randomRotateY={8}
               randomRotateX={13}
             />

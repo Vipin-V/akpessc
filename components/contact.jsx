@@ -64,8 +64,8 @@ const ContactUs = () => {
         ))}
       </div> */}
       <div className="mt-10">
-        <footer class=" bg-opacity-80 bg-slate-900 lg:grid lg:grid-cols-5 rounded-2xl py-3 mb-10">
-          <div class="relative   lg:col-span-2 lg:h-full">
+        <footer className=" bg-opacity-80 bg-slate-900 lg:grid lg:grid-cols-5 rounded-2xl py-3 mb-10">
+          <div className="relative   lg:col-span-2 lg:h-full">
             <h1
               className="block md:hidden text-center mt-4 text-4xl text-violet-600"
               style={myFont.style}
@@ -75,7 +75,7 @@ const ContactUs = () => {
             <Image
               src="/logoh.png"
               alt=""
-              class="absolute hidden md:block inset-0 h-full w-full object-cover"
+              className="absolute hidden md:block inset-0 h-full w-full object-cover"
               height={580}
               width={580}
             />
