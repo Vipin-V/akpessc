@@ -159,7 +159,7 @@ export default function Home() {
             </button>
           </div>
           <div className="pt-20 text-xl md:text-3xl text-center font-bold text-slate-200">
-          Registration : 2 March - 29 March.
+          Registration : 2nd March - 29th March.
           </div>
         </div>
       </div>
