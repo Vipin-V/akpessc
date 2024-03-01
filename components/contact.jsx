@@ -81,28 +81,28 @@ const ContactUs = () => {
             />
           </div>
 
-          <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div>
-                <ul class="mt-8 space-y-1   text-gray-300 ">
+                <ul className="mt-8 space-y-1   text-gray-300 ">
                   <li className="font-semibold tetx-xl">
                     Hack-A-Sol IIIT Naya Raipur{" "}
                   </li>
                   <li>Code -- Innovate -- Elevate</li>
                 </ul>
 
-                <ul class="mt-8 flex gap-6">
+                <ul className="mt-8 flex gap-6">
                   <li>
                     <a
                       href="/"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-gray-100 transition hover:opacity-75"
+                      className="text-gray-100 transition hover:opacity-75"
                     >
-                      <span class="sr-only">Facebook</span>
+                      <span className="sr-only">Facebook</span>
 
                       <svg
-                        class="h-6 w-6"
+                        className="h-6 w-6"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
@@ -121,12 +121,12 @@ const ContactUs = () => {
                       href="/"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-gray-100 transition hover:opacity-75"
+                      className="text-gray-100 transition hover:opacity-75"
                     >
-                      <span class="sr-only">Instagram</span>
+                      <span className="sr-only">Instagram</span>
 
                       <svg
-                        class="h-6 w-6"
+                        className="h-6 w-6"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
@@ -145,12 +145,12 @@ const ContactUs = () => {
                       href="/"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-gray-100 transition hover:opacity-75"
+                      className="text-gray-100 transition hover:opacity-75"
                     >
-                      <span class="sr-only">Twitter</span>
+                      <span className="sr-only">Twitter</span>
 
                       <svg
-                        class="h-6 w-6"
+                        className="h-6 w-6"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
@@ -165,12 +165,12 @@ const ContactUs = () => {
                       href="/"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-gray-100 transition hover:opacity-75"
+                      className="text-gray-100 transition hover:opacity-75"
                     >
-                      <span class="sr-only">GitHub</span>
+                      <span className="sr-only">GitHub</span>
 
                       <svg
-                        class="h-6 w-6"
+                        className="h-6 w-6"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         aria-hidden="true"
@@ -186,15 +186,15 @@ const ContactUs = () => {
                 </ul>
               </div>
 
-              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
-                  <p class="font-medium text-gray-200">Services</p>
+                  <p className="font-medium text-gray-200">Services</p>
 
-                  <ul class="mt-6 space-y-4 text-md">
+                  <ul className="mt-6 space-y-4 text-md">
                     <li>
                       <a
                         href="#"
-                        class="text-gray-400 transition hover:opacity-75"
+                        className="text-gray-400 transition hover:opacity-75"
                       >
                         Register for Hack-a-Sol
                       </a>
@@ -203,7 +203,7 @@ const ContactUs = () => {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-400 transition hover:opacity-75"
+                        className="text-gray-400 transition hover:opacity-75"
                       >
                         Contact the Organizers
                       </a>
@@ -212,7 +212,7 @@ const ContactUs = () => {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-400 transition hover:opacity-75"
+                        className="text-gray-400 transition hover:opacity-75"
                       >
                         FAQs
                       </a>
@@ -221,7 +221,7 @@ const ContactUs = () => {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-400 transition hover:opacity-75"
+                        className="text-gray-400 transition hover:opacity-75"
                       >
                         IIIT Naya Raipur
                       </a>
@@ -230,13 +230,13 @@ const ContactUs = () => {
                 </div>
 
                 <div>
-                  <p class=" font-bold text-gray-200">Hack-A-Sol</p>
+                  <p className=" font-bold text-gray-200">Hack-A-Sol</p>
 
-                  <ul class="mt-6 space-y-4 text-md">
+                  <ul className="mt-6 space-y-4 text-md">
                     <li>
                       <a
                         href="#"
-                        class="text-gray-400 transition hover:opacity-75"
+                        className="text-gray-400 transition hover:opacity-75"
                       >
                         About
                       </a>
@@ -245,7 +245,7 @@ const ContactUs = () => {
                     <li>
                       <a
                         href="#"
-                        class="text-gray-400 transition hover:opacity-75"
+                        className="text-gray-400 transition hover:opacity-75"
                       >
                         Meet the Team
                       </a>
@@ -255,13 +255,13 @@ const ContactUs = () => {
               </div>
             </div>
 
-            <div class="mt-12 border-t border-gray-100 pt-12">
-              <div class="sm:flex sm:items-center sm:justify-between">
-                <ul class="flex flex-wrap gap-4 text-md">
+            <div className="mt-12 border-t border-gray-100 pt-12">
+              <div className="sm:flex sm:items-center sm:justify-between">
+                <ul className="flex flex-wrap gap-4 text-md">
                   <li>
                     <a
                       href="#"
-                      class="text-gray-500 transition hover:opacity-75"
+                      className="text-gray-500 transition hover:opacity-75"
                     >
                       Terms & Conditions
                     </a>
@@ -270,14 +270,14 @@ const ContactUs = () => {
                   <li>
                     <a
                       href="#"
-                      class="text-gray-500 transition hover:opacity-75"
+                      className="text-gray-500 transition hover:opacity-75"
                     >
                       Privacy Policy
                     </a>
                   </li>
                 </ul>
 
-                <p class="mt-8 text-md text-gray-500 sm:mt-0 font-black ">
+                <p className="mt-8 text-md text-gray-500 sm:mt-0 font-black ">
                   &copy; {new Date().getFullYear()}. Hack-a-Sol. All rights
                   reserved.
                 </p>

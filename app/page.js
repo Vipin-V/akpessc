@@ -94,14 +94,12 @@ export default function Home() {
               >
                 <motion.h1
                   style={myFont.style}
-                  className="text-6xl md:text-9xl font-semibold text-ce\
-                  \
-                    text-purple-700/90  "
+                  className=" mt-20 text-5xl md:text-9xl font-semibold text-center text-purple-700/90  "
                   variants={pixelatedAndNeonText}
                   initial="initial"
                   animate="animate"
                 >
-                  HACK-A-SOL
+                  HACK-A-SOL 3.0
                 </motion.h1>
                 <motion.p
                   className="text-center text-white text-lg mt-10"
@@ -110,7 +108,7 @@ export default function Home() {
                   transition={{ duration: 1, delay: 0.5 }}
                   variants={pixelatedAndNeonText}
                 >
-                  Coming Soon • Naya Raipur, India
+                  6th - 7th April • Naya Raipur, India
                 </motion.p>
               </motion.div>
             </AnimatePresence>
@@ -161,7 +159,7 @@ export default function Home() {
             </button>
           </div>
           <div className="pt-20 text-xl md:text-3xl text-center font-bold text-slate-200">
-            Registration Starts Soon
+          Registration : 2 March - 29 March.
           </div>
         </div>
       </div>
