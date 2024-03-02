@@ -32,8 +32,8 @@ const Timeline = () => {
               2nd - 29th March : Registration Period
             </h3>
             <p className="leading-tight text-justify">
-              Participants are required to register through UnStop
-              and submit their resumes.
+              Participants are required to register through UnStop and submit
+              their resumes.
             </p>
           </div>
           <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -53,7 +53,7 @@ const Timeline = () => {
           </div>
           <div className="bg-indigo-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">
-              29th - 31st March  : Shortlistling Period
+              29th - 31st March : Shortlistling Period
             </h3>
             <p className="leading-tight text-justify">
               20 teams will be shortlisted, who will participate in the offline
@@ -87,10 +87,10 @@ const Timeline = () => {
           </div>
           <div className="bg-indigo-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">
-              6th April : Problem Statement Announcement
+              5th April : Problem Statement Announcement
             </h3>
             <p className="leading-tight text-justify">
-            All the teams will be given the problem statement at 09:30 AM. and
+              All the teams will be given the problem statement at 09:30 AM. and
               required to submit their solutions by 28 hours.
             </p>
           </div>
@@ -101,8 +101,8 @@ const Timeline = () => {
               6th - 7th : Hacking Period
             </h3>
             <p className="leading-tight text-justify">
-              All the teams will be given 28 hours to work on selected problem statement and
-              required to submit their solutions before deadline.
+              All the teams will be given 28 hours to work on selected problem
+              statement and required to submit their solutions before deadline.
             </p>
           </div>
           <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">

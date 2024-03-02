@@ -2,23 +2,16 @@
 import localFont from "next/font/local";
 import Image from "next/image";
 const myFont = localFont({ src: "../font/Minecrafter.Alt.ttf" });
-import { createContext, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Card from "@/components/card";
 import ScrollToTopButton from "@/components/top";
-import BlockBreakAnimation from "@/components/BlockAnimation";
 import Timeline from "@/components/timeline";
 import AboutUs from "@/components/about";
-import Sponsors from "@/components/sponsors";
 import ContactUs from "@/components/contact";
 import Tracks from "@/components/Tracks";
+import Link from "next/link";
 
 export default function Home() {
-  // const [animationComplete, setAnimationComplete] = useState(false);
-
-  // const handleAnimationComplete = () => {
-  //   setAnimationComplete(true);
-  // };
   const pixelatedAndNeonText = {
     initial: {
       textShadow:
@@ -35,7 +28,7 @@ export default function Home() {
   return (
     <>
       <nav className="fixed top-0 left-0 h-20 w-full z-50 flex items-center justify-between px-8 md:px-20 py-1">
-        <div>
+        <div className="flex items-center gap-2">
           <a href="#home">
             <Image
               src="/logo.png"
@@ -45,11 +38,23 @@ export default function Home() {
               alt="logo"
             />
           </a>
+          <div class="border-l-2 border-white h-10" />
+          <a href="https://sac.iiitnr.ac.in/">
+            <Image
+              src="/sac.png"
+              width={50}
+              height={50}
+              className="object-cover"
+              alt="logo"
+            />
+          </a>
         </div>
         <div className="flex md:hidden">
-          <button className="bg-violet-700 text-white gap-x-2 px-4 py-2">
-            Contact Us
-          </button>
+          <a href="mailto:hackasol@iiitnr.edu.in" target="_blank">
+            <button className="bg-violet-700 text-white gap-x-2 px-4 py-2">
+              Contact Us
+            </button>
+          </a>
         </div>
         <div className="hidden md:flex">
           <ul className="flex text-lg gap-x-10 text-white">
@@ -84,7 +89,6 @@ export default function Home() {
       >
         <div className="h-screen w-full flex flex-col items-center justify-center z-10 ">
           <div className="mb-10">
-
             <AnimatePresence>
               <motion.div
                 className="mb-10"
@@ -125,16 +129,24 @@ export default function Home() {
               />
               <p className="text-lg text-white font-medium">Join Our Discord</p>
             </button>
-            <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
-              <Image
-                src="/un.svg"
-                width={25}
-                height={25}
-                className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
-                alt="devfolio"
-              />
-              <p className="text-lg text-white font-medium">Apply with Unstop</p>
-            </button>
+            <Link
+              href="https://unstop.com/o/Ux3yg0k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
+                <Image
+                  src="/un.svg"
+                  width={25}
+                  height={25}
+                  className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
+                  alt="devfolio"
+                />
+                <p className="text-lg text-white font-medium">
+                  Apply with Unstop
+                </p>
+              </button>
+            </Link>
           </div>
           <div className="flex md:hidden gap-x-10 mt-6">
             <button className="bg-indigo-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
@@ -147,19 +159,26 @@ export default function Home() {
               />
               <p className="text-lg text-white font-medium">Discord</p>
             </button>
-            <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
-              <Image
-                src="/un.svg"
-                width={25}
-                height={25}
-                className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
-                alt="devfolio"
-              />
-              <p className="text-lg text-white font-medium">Unstop</p>
-            </button>
+            <Link
+              href="https://unstop.com/o/Ux3yg0k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-blue-500 flex items-center gap-x-2 px-4 py-2 hover:scale-105 group transition">
+                <Image
+                  src="/un.svg"
+                  width={25}
+                  height={25}
+                  className="object-cover group-hover:-rotate-12 group-hover:scale-125  group-hover:-translate-x-1 transition"
+                  alt="devfolio"
+                />
+                <p className="text-lg text-white font-medium">Unstop</p>
+              </button>
+            </Link>
           </div>
           <div className="pt-20 text-xl md:text-3xl text-center font-bold text-slate-200">
-          Registration : 2nd March - 29th March.
+            Registration : <br className="block md:hidden" /> 2nd March - 29th
+            March.
           </div>
         </div>
       </div>
@@ -178,9 +197,8 @@ export default function Home() {
           >
             About Us
           </h1>
-          <AboutUs/>
+          <AboutUs />
         </div>
-
       </div>
 
       <div
@@ -268,9 +286,9 @@ export default function Home() {
             Tracks and Sponsors
           </h1>
           <div className="my-10 mt-10 px-3">
-          <Tracks/>
+            <Tracks />
           </div>
-         
+
           {/* <Sponsors/> */}
         </div>
       </div>
@@ -289,7 +307,7 @@ export default function Home() {
           >
             Contact Us
           </h1>
-         <ContactUs/>
+          <ContactUs />
         </div>
       </div>
     </>
